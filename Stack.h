@@ -1,5 +1,5 @@
 #include <iostream>
-
+#pragma once
 template <typename T>
 class Stack{
 private:
@@ -35,7 +35,7 @@ public:
             _isEmpty = true;
             return _array[_top];
         }    
-        return _array[_top];
+        return _array[_top--];
     }
     T Check() const{
         return _array[_top];
@@ -51,6 +51,9 @@ public:
         }
         _size = _size*2;
         delete [] arr;  
+    }
+    size_t GetLength(){
+        return _size;
     }
 
 

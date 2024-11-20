@@ -129,6 +129,30 @@ main/fast:
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/main.dir/build.make CMakeFiles/main.dir/build
 .PHONY : main/fast
 
+correct.o: correct.cpp.o
+.PHONY : correct.o
+
+# target to build an object file
+correct.cpp.o:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/main.dir/build.make CMakeFiles/main.dir/correct.cpp.o
+.PHONY : correct.cpp.o
+
+correct.i: correct.cpp.i
+.PHONY : correct.i
+
+# target to preprocess a source file
+correct.cpp.i:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/main.dir/build.make CMakeFiles/main.dir/correct.cpp.i
+.PHONY : correct.cpp.i
+
+correct.s: correct.cpp.s
+.PHONY : correct.s
+
+# target to generate assembly for a file
+correct.cpp.s:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/main.dir/build.make CMakeFiles/main.dir/correct.cpp.s
+.PHONY : correct.cpp.s
+
 main.o: main.cpp.o
 .PHONY : main.o
 
@@ -162,6 +186,9 @@ help:
 	@echo "... edit_cache"
 	@echo "... rebuild_cache"
 	@echo "... main"
+	@echo "... correct.o"
+	@echo "... correct.i"
+	@echo "... correct.s"
 	@echo "... main.o"
 	@echo "... main.i"
 	@echo "... main.s"

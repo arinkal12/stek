@@ -1,7 +1,12 @@
 [
 {
   "directory": "/home/s23380411@unn.global/stek/build",
-  "command": "/usr/bin/g++-12   -g -o CMakeFiles/main.dir/main.cpp.o -c /home/s23380411@unn.global/stek/main.cpp",
+  "command": "/usr/bin/g++-12    -std=c++17 -g -o CMakeFiles/main.dir/main.cpp.o -c /home/s23380411@unn.global/stek/main.cpp",
   "file": "/home/s23380411@unn.global/stek/main.cpp"
+},
+{
+  "directory": "/home/s23380411@unn.global/stek/build",
+  "command": "/usr/bin/g++-12    -std=c++17 -g -o CMakeFiles/main.dir/correct.cpp.o -c /home/s23380411@unn.global/stek/correct.cpp",
+  "file": "/home/s23380411@unn.global/stek/correct.cpp"
 }
 ]
