@@ -1,11 +1,34 @@
 #include <iostream>
 #include "Stack.h"
 #include "correct.h"
-int main(){
-    std::string s = "(a+b)+(c+(b-d))";
-    CorrectChecker cc;
-    std::cout<<"proverka korrect skobok "<< cc.CheckerBrackets(s);
+#include "Table.h"
+#include <optional>
 
+
+std::optional<std::string> create(bool b){
+    if(b){
+        return "GGG";
+    }
+    return std::nullopt;
+}
+int main(){
+
+    // Table<std::string, double> array("per","per2",20);
+    // // создали табличку 
+    // array.AppendRow("a",5);
+    // array.AppendRow("b",4.99);
+    // array.AppendRow("per",5.01);
+    // array.Print();
+
+
+    std::string s = "(a+b)+c+b-d))";
+    CorrectChecker cc;
+    std::cout<<"proverka korrect skobok\n"<< cc.CheckerBrackets(s);
+    
+
+
+
+// лщззулт доделать 
 
 
 

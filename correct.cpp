@@ -1,7 +1,9 @@
 #include "correct.h"
 #include "Table.h"
+#include <optional>
+
 bool CorrectChecker::CheckerBrackets(const std::string& s){
-    Table<int,int>table1;
+    Table<std::optional<int>,std::optional<int>> table("(",")", 20);
     for(size_t i=0;i<s.size(); i++){
         if(s[i] == '('){
             _brackets.Push(i);
@@ -13,7 +15,10 @@ bool CorrectChecker::CheckerBrackets(const std::string& s){
             }
             catch (const char* error_message)
             {
+                table1.AppendRow(-1,i);
+                table1.Print();
                 std::cout << "EROR _brackets " << std::endl;
+                return false;
             }
         }
 
